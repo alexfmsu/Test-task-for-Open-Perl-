@@ -77,7 +77,7 @@ sub processClientReq {
             chomp($msg);
             $msg =~ s/\n/\\n/g;
             logg $msg;
-            next; # next if current json is wrong
+            next;    # next if current json is wrong
             # dropClient($c);
             # last;
         };
@@ -90,7 +90,7 @@ sub processClientReq {
             chomp($msg);
             $msg =~ s/\n/\\n/g;
             logg $msg;
-             next; # next if current json is wrong
+            next;    # next if current json is wrong
             # dropClient($c);
             # last;
         };

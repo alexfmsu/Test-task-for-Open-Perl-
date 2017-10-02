@@ -6,9 +6,6 @@ sub TCP_KEEPINTVL() {5}
 sub TCP_KEEPCNT()   {6}
 use Socket qw(IPPROTO_TCP );
 
-use lib '.';    # ?
-
-use IO::Compress::Gzip;
 use IO::Uncompress::Gunzip;
 use Compress::Zlib;
 
@@ -37,7 +34,7 @@ sub newClient {
     logg "+client #"
         . fileno($c) . " "
         . inet_ntoa( ( sockaddr_in $c->peername() )[1] );
-    
+
     send $c, to_gzip("\r\n"), 0;    #only small message
     $c->setsockopt( IPPROTO_TCP, TCP_KEEPIDLE,  100 );
     $c->setsockopt( IPPROTO_TCP, TCP_KEEPINTVL, 30 );
@@ -58,8 +55,6 @@ sub processClientReq {
     my $gz_in = new IO::Uncompress::Gunzip $c, AutoClose => 1;
     my $rv = $gz_in->read( $dt, 4096 );
 
-    my @dt_arr = split /\n/, $dt;
-
     if ( defined($rv) && $rv == 0 ) {
         if ( length $clientBuf{$c}[1] ) {
             EPW::setFDH( $c, undef, \&sendTo, \&clientErr, undef );
@@ -73,6 +68,8 @@ sub processClientReq {
         dropClient($c);
     }
 
+    my @dt_arr = split /\n/, $dt;
+
     for my $_dt (@dt_arr) {
         $clientBuf{$c}[0]->incr_parse($_dt);
 
@@ -85,8 +82,9 @@ sub processClientReq {
             chomp($msg);
             $msg =~ s/\n/\\n/g;
             logg $msg;
-            dropClient($c);
-            last;
+            next;    # next if current json is wrong
+            # dropClient($c);
+            # last;
         };
 
         eval {
@@ -97,7 +95,9 @@ sub processClientReq {
             chomp($msg);
             $msg =~ s/\n/\\n/g;
             logg $msg;
-            dropClient($c);
+            next;    # next if current json is wrong
+            # dropClient($c);
+            # last;
         };
     }
 }
@@ -114,7 +114,7 @@ sub sendReply {
     }
 }
 
-sub to_gzip{
+sub to_gzip {
     return Compress::Zlib::memGzip(shift);
 }
 
@@ -123,7 +123,9 @@ sub reply {
     my $dt   = encode_json($obj);
     my $pref = $$obj{ans};
     logg ">c#" . fileno($c) . "[$pref]: $dt";
-    
+
+    $dt .= "\r\n";
+
     $dt = to_gzip($dt);
 
     if ( length( $clientBuf{$c}[1] ) ) {
@@ -131,12 +133,10 @@ sub reply {
     }
     else {
         my $bytes = send $c, $dt, 0;
-        
-        # my $bytes = send $gzip_reply, $dt, 0;
         if ( $bytes < length $dt ) {
             $clientBuf{$c}[1] = $dt;
-            EPW::setFDH( $c, \&processClientReq, \&sendReply,
-                \&clientErr, undef );
+            EPW::setFDH( $c, \&processClientReq, \&sendReply, \&clientErr,
+                undef );
         }
     }
 }
