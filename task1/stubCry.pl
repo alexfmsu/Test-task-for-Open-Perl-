@@ -11,7 +11,6 @@ use EPW;
 use JSON::XS;
 use utf8;
 
-
 my $S;
 my %clientBuf;
 
