@@ -6,12 +6,11 @@ sub TCP_KEEPINTVL() {5}
 sub TCP_KEEPCNT()   {6}
 use Socket qw(IPPROTO_TCP );
 
-use lib '.';    # ?
-
 use strict;
 use EPW;
 use JSON::XS;
 use utf8;
+
 
 my $S;
 my %clientBuf;
@@ -51,8 +50,6 @@ sub processClientReq {
     my $dt;
 
     my $rv = $c->read( $dt, 4096 );
-    
-    my @dt_arr = split /\n/, $dt;
 
     if ( defined($rv) && $rv == 0 ) {
         if ( length $clientBuf{$c}[1] ) {
@@ -67,6 +64,8 @@ sub processClientReq {
         dropClient($c);
     }
 
+    my @dt_arr = split /\n/, $dt;
+
     for my $_dt (@dt_arr) {
         $clientBuf{$c}[0]->incr_parse($_dt);
 
@@ -79,8 +78,9 @@ sub processClientReq {
             chomp($msg);
             $msg =~ s/\n/\\n/g;
             logg $msg;
-            dropClient($c);
-            last;
+            next; # next if current json is wrong
+            # dropClient($c);
+            # last;
         };
 
         eval {
@@ -91,7 +91,9 @@ sub processClientReq {
             chomp($msg);
             $msg =~ s/\n/\\n/g;
             logg $msg;
-            dropClient($c);
+             next; # next if current json is wrong
+            # dropClient($c);
+            # last;
         };
     }
 }

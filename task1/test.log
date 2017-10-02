@@ -7,3 +7,140 @@ Mon Oct  2 18:27:06 2017 <c#6[close]: {"id":"3925_3_638_136431","coupons":["cl02
 Mon Oct  2 18:27:06 2017 coupon 02-759-740-479 closed
 Mon Oct  2 18:27:06 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
 Mon Oct  2 18:27:06 2017 -client #6
+Mon Oct  2 18:43:17 2017 +client #6 127.0.0.1
+Mon Oct  2 18:43:17 2017 <c#6[verify]: {"req":"verify","code":"cl02759740479","id":"3925_3_638"}
+Mon Oct  2 18:43:17 2017 >c#6[coupon]: {"ans":"coupon","state":"invalid","code":"cl02759740479"}
+Mon Oct  2 18:43:17 2017 <c#6[prepare]: {"coupons":["cl02759740479"],"req":"prepare","id":"3925_3_638_136431","time":1461531891,"items":[{"code":"1033980","price":38,"num":1,"discount":1.9,"amount":1,"exclude":"0","priceMin":0,"barcode":"40084725","cost":36.1},{"exclude":"0","amount":1,"priceMin":0,"num":2,"discount":1.99,"code":"1229684","price":39.8,"cost":37.81,"barcode":"4620006000925"}]}
+Mon Oct  2 18:43:17 2017 >c#6[discount]: {"id":"3925_3_638_136431","discount":[{"code":"action-6","num":1,"discount":10.925},{"discount":11.4425,"num":2,"code":"action-6"}],"ans":"discount"}
+Mon Oct  2 18:43:17 2017 <c#6[close]: {"time":1461531891,"items":[{"cost":36,"barcode":"40084725","exclude":"0","priceMin":0,"amount":1,"code":"1033980","price":38,"num":1,"discount":10.93},{"barcode":"4620006000925","cost":37,"num":2,"discount":11.44,"code":"1229684","price":39.8,"exclude":"0","priceMin":0,"amount":1}],"id":"3925_3_638_136431","req":"close","coupons":["cl02759740479"]}
+Mon Oct  2 18:43:17 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:43:17 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
+Mon Oct  2 18:43:17 2017 -client #6
+Mon Oct  2 18:44:40 2017 +client #6 127.0.0.1
+Mon Oct  2 18:44:40 2017 -client #6
+Mon Oct  2 18:45:21 2017 +client #6 127.0.0.1
+Mon Oct  2 18:45:21 2017 <c#6[verify]: {"id":"3925_3_638","req":"verify","code":"cl02759740479"}
+Mon Oct  2 18:45:21 2017 >c#6[coupon]: {"code":"cl02759740479","state":"invalid","ans":"coupon"}
+Mon Oct  2 18:45:21 2017 <c#6[prepare]: {"time":1461531891,"items":[{"priceMin":0,"discount":1.9,"price":38,"exclude":"0","num":1,"code":"1033980","barcode":"40084725","cost":36.1,"amount":1},{"priceMin":0,"discount":1.99,"price":39.8,"barcode":"4620006000925","code":"1229684","num":2,"exclude":"0","amount":1,"cost":37.81}],"req":"prepare","coupons":["cl02759740479"],"id":"3925_3_638_136431"}
+Mon Oct  2 18:45:21 2017 >c#6[discount]: {"discount":[{"discount":10.925,"code":"action-6","num":1},{"num":2,"code":"action-6","discount":11.4425}],"ans":"discount","id":"3925_3_638_136431"}
+Mon Oct  2 18:45:21 2017 <c#6[close]: {"items":[{"price":38,"priceMin":0,"discount":10.93,"amount":1,"cost":36,"barcode":"40084725","code":"1033980","num":1,"exclude":"0"},{"code":"1229684","num":2,"exclude":"0","barcode":"4620006000925","cost":37,"amount":1,"discount":11.44,"priceMin":0,"price":39.8}],"req":"close","time":1461531891,"id":"3925_3_638_136431","coupons":["cl02759740479"]}
+Mon Oct  2 18:45:21 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:45:21 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
+Mon Oct  2 18:45:21 2017 -client #6
+Mon Oct  2 18:45:49 2017 +client #6 127.0.0.1
+Mon Oct  2 18:45:49 2017 <c#6[verify]: {"code":"cl02759740479","id":"3925_3_638","req":"verify"}
+Mon Oct  2 18:45:49 2017 >c#6[coupon]: {"ans":"coupon","state":"invalid","code":"cl02759740479"}
+Mon Oct  2 18:45:49 2017 <c#6[prepare]: {"time":1461531891,"items":[{"barcode":"40084725","priceMin":0,"price":38,"cost":36.1,"discount":1.9,"num":1,"exclude":"0","code":"1033980","amount":1},{"barcode":"4620006000925","price":39.8,"priceMin":0,"discount":1.99,"cost":37.81,"exclude":"0","num":2,"code":"1229684","amount":1}],"coupons":["cl02759740479"],"req":"prepare","id":"3925_3_638_136431"}
+Mon Oct  2 18:45:49 2017 >c#6[discount]: {"discount":[{"code":"action-6","discount":10.925,"num":1},{"num":2,"code":"action-6","discount":11.4425}],"id":"3925_3_638_136431","ans":"discount"}
+Mon Oct  2 18:45:49 2017 <c#6[close]: {"req":"close","coupons":["cl02759740479"],"items":[{"cost":36,"discount":10.93,"priceMin":0,"price":38,"barcode":"40084725","amount":1,"code":"1033980","exclude":"0","num":1},{"amount":1,"code":"1229684","num":2,"exclude":"0","discount":11.44,"cost":37,"price":39.8,"priceMin":0,"barcode":"4620006000925"}],"time":1461531891,"id":"3925_3_638_136431"}
+Mon Oct  2 18:45:49 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:45:49 2017 >c#6[close]: {"id":"3925_3_638_136431","ans":"close"}
+Mon Oct  2 18:45:49 2017 -client #6
+Mon Oct  2 18:45:52 2017 +client #6 127.0.0.1
+Mon Oct  2 18:45:52 2017 <c#6[verify]: {"code":"cl02759740479","id":"3925_3_638","req":"verify"}
+Mon Oct  2 18:45:52 2017 >c#6[coupon]: {"code":"cl02759740479","state":"invalid","ans":"coupon"}
+Mon Oct  2 18:45:52 2017 <c#6[prepare]: {"req":"prepare","coupons":["cl02759740479"],"time":1461531891,"items":[{"cost":36.1,"discount":1.9,"priceMin":0,"price":38,"barcode":"40084725","amount":1,"code":"1033980","exclude":"0","num":1},{"code":"1229684","amount":1,"num":2,"exclude":"0","cost":37.81,"discount":1.99,"barcode":"4620006000925","priceMin":0,"price":39.8}],"id":"3925_3_638_136431"}
+Mon Oct  2 18:45:52 2017 >c#6[discount]: {"id":"3925_3_638_136431","discount":[{"code":"action-6","discount":10.925,"num":1},{"num":2,"code":"action-6","discount":11.4425}],"ans":"discount"}
+Mon Oct  2 18:45:52 2017 <c#6[close]: {"req":"close","time":1461531891,"items":[{"price":38,"priceMin":0,"barcode":"40084725","cost":36,"discount":10.93,"num":1,"exclude":"0","amount":1,"code":"1033980"},{"cost":37,"discount":11.44,"barcode":"4620006000925","priceMin":0,"price":39.8,"code":"1229684","amount":1,"num":2,"exclude":"0"}],"coupons":["cl02759740479"],"id":"3925_3_638_136431"}
+Mon Oct  2 18:45:52 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:45:52 2017 >c#6[close]: {"id":"3925_3_638_136431","ans":"close"}
+Mon Oct  2 18:45:52 2017 -client #6
+Mon Oct  2 18:46:26 2017 +client #6 127.0.0.1
+Mon Oct  2 18:46:26 2017 <c#6[verify]: {"req":"verify","id":"3925_3_638","code":"cl02759740479"}
+Mon Oct  2 18:46:26 2017 >c#6[coupon]: {"code":"cl02759740479","state":"invalid","ans":"coupon"}
+Mon Oct  2 18:46:26 2017 <c#6[prepare]: {"coupons":["cl02759740479"],"req":"prepare","time":1461531891,"id":"3925_3_638_136431","items":[{"code":"1033980","cost":36.1,"barcode":"40084725","amount":1,"price":38,"exclude":"0","num":1,"discount":1.9,"priceMin":0},{"cost":37.81,"code":"1229684","num":2,"price":39.8,"exclude":"0","amount":1,"barcode":"4620006000925","priceMin":0,"discount":1.99}]}
+Mon Oct  2 18:46:26 2017 >c#6[discount]: {"id":"3925_3_638_136431","ans":"discount","discount":[{"num":1,"discount":10.925,"code":"action-6"},{"discount":11.4425,"num":2,"code":"action-6"}]}
+Mon Oct  2 18:46:26 2017 <c#6[close]: {"id":"3925_3_638_136431","items":[{"discount":10.93,"priceMin":0,"amount":1,"barcode":"40084725","num":1,"exclude":"0","price":38,"cost":36,"code":"1033980"},{"discount":11.44,"priceMin":0,"cost":37,"code":"1229684","amount":1,"barcode":"4620006000925","num":2,"exclude":"0","price":39.8}],"req":"close","time":1461531891,"coupons":["cl02759740479"]}
+Mon Oct  2 18:46:26 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:46:26 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
+Mon Oct  2 18:46:26 2017 -client #6
+Mon Oct  2 18:47:05 2017 +client #6 127.0.0.1
+Mon Oct  2 18:47:05 2017 <c#6[verify]: {"code":"cl02759740479","req":"verify","id":"3925_3_638"}
+Mon Oct  2 18:47:05 2017 >c#6[coupon]: {"ans":"coupon","state":"invalid","code":"cl02759740479"}
+Mon Oct  2 18:47:05 2017 <c#6[prepare]: {"time":1461531891,"items":[{"code":"1033980","priceMin":0,"num":1,"discount":1.9,"price":38,"exclude":"0","amount":1,"cost":36.1,"barcode":"40084725"},{"priceMin":0,"code":"1229684","discount":1.99,"num":2,"barcode":"4620006000925","cost":37.81,"amount":1,"price":39.8,"exclude":"0"}],"coupons":["cl02759740479"],"req":"prepare","id":"3925_3_638_136431"}
+Mon Oct  2 18:47:05 2017 >c#6[discount]: {"ans":"discount","id":"3925_3_638_136431","discount":[{"num":1,"discount":10.925,"code":"action-6"},{"code":"action-6","discount":11.4425,"num":2}]}
+Mon Oct  2 18:47:05 2017 <c#6[close]: {"time":1461531891,"id":"3925_3_638_136431","coupons":["cl02759740479"],"req":"close","items":[{"num":1,"discount":10.93,"code":"1033980","priceMin":0,"amount":1,"cost":36,"barcode":"40084725","exclude":"0","price":38},{"code":"1229684","priceMin":0,"num":2,"discount":11.44,"price":39.8,"exclude":"0","amount":1,"cost":37,"barcode":"4620006000925"}]}
+Mon Oct  2 18:47:05 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:47:05 2017 >c#6[close]: {"id":"3925_3_638_136431","ans":"close"}
+Mon Oct  2 18:47:05 2017 -client #6
+Mon Oct  2 18:47:06 2017 +client #6 127.0.0.1
+Mon Oct  2 18:47:06 2017 <c#6[verify]: {"req":"verify","code":"cl02759740479","id":"3925_3_638"}
+Mon Oct  2 18:47:06 2017 >c#6[coupon]: {"ans":"coupon","code":"cl02759740479","state":"invalid"}
+Mon Oct  2 18:47:06 2017 <c#6[prepare]: {"time":1461531891,"coupons":["cl02759740479"],"req":"prepare","id":"3925_3_638_136431","items":[{"discount":1.9,"num":1,"priceMin":0,"code":"1033980","exclude":"0","price":38,"barcode":"40084725","amount":1,"cost":36.1},{"exclude":"0","price":39.8,"barcode":"4620006000925","amount":1,"cost":37.81,"discount":1.99,"num":2,"priceMin":0,"code":"1229684"}]}
+Mon Oct  2 18:47:06 2017 >c#6[discount]: {"ans":"discount","id":"3925_3_638_136431","discount":[{"num":1,"discount":10.925,"code":"action-6"},{"code":"action-6","discount":11.4425,"num":2}]}
+Mon Oct  2 18:47:06 2017 <c#6[close]: {"items":[{"num":1,"discount":10.93,"code":"1033980","priceMin":0,"exclude":"0","price":38,"amount":1,"cost":36,"barcode":"40084725"},{"exclude":"0","price":39.8,"cost":37,"amount":1,"barcode":"4620006000925","num":2,"discount":11.44,"code":"1229684","priceMin":0}],"req":"close","coupons":["cl02759740479"],"id":"3925_3_638_136431","time":1461531891}
+Mon Oct  2 18:47:06 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:47:06 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
+Mon Oct  2 18:47:06 2017 -client #6
+Mon Oct  2 18:47:07 2017 +client #6 127.0.0.1
+Mon Oct  2 18:47:07 2017 <c#6[verify]: {"id":"3925_3_638","code":"cl02759740479","req":"verify"}
+Mon Oct  2 18:47:07 2017 >c#6[coupon]: {"ans":"coupon","state":"invalid","code":"cl02759740479"}
+Mon Oct  2 18:47:07 2017 <c#6[prepare]: {"time":1461531891,"items":[{"price":38,"exclude":"0","cost":36.1,"amount":1,"barcode":"40084725","code":"1033980","priceMin":0,"num":1,"discount":1.9},{"exclude":"0","price":39.8,"cost":37.81,"amount":1,"barcode":"4620006000925","num":2,"discount":1.99,"code":"1229684","priceMin":0}],"coupons":["cl02759740479"],"id":"3925_3_638_136431","req":"prepare"}
+Mon Oct  2 18:47:07 2017 >c#6[discount]: {"ans":"discount","id":"3925_3_638_136431","discount":[{"discount":10.925,"num":1,"code":"action-6"},{"code":"action-6","discount":11.4425,"num":2}]}
+Mon Oct  2 18:47:07 2017 <c#6[close]: {"time":1461531891,"id":"3925_3_638_136431","coupons":["cl02759740479"],"req":"close","items":[{"exclude":"0","price":38,"amount":1,"cost":36,"barcode":"40084725","num":1,"discount":10.93,"code":"1033980","priceMin":0},{"priceMin":0,"code":"1229684","discount":11.44,"num":2,"price":39.8,"exclude":"0","barcode":"4620006000925","cost":37,"amount":1}]}
+Mon Oct  2 18:47:07 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:47:07 2017 >c#6[close]: {"id":"3925_3_638_136431","ans":"close"}
+Mon Oct  2 18:47:07 2017 -client #6
+Mon Oct  2 18:47:08 2017 +client #6 127.0.0.1
+Mon Oct  2 18:47:08 2017 <c#6[verify]: {"code":"cl02759740479","id":"3925_3_638","req":"verify"}
+Mon Oct  2 18:47:08 2017 >c#6[coupon]: {"ans":"coupon","code":"cl02759740479","state":"invalid"}
+Mon Oct  2 18:47:08 2017 <c#6[prepare]: {"time":1461531891,"id":"3925_3_638_136431","coupons":["cl02759740479"],"req":"prepare","items":[{"code":"1033980","priceMin":0,"num":1,"discount":1.9,"price":38,"exclude":"0","amount":1,"cost":36.1,"barcode":"40084725"},{"discount":1.99,"num":2,"priceMin":0,"code":"1229684","exclude":"0","price":39.8,"barcode":"4620006000925","cost":37.81,"amount":1}]}
+Mon Oct  2 18:47:08 2017 >c#6[discount]: {"ans":"discount","discount":[{"code":"action-6","discount":10.925,"num":1},{"discount":11.4425,"num":2,"code":"action-6"}],"id":"3925_3_638_136431"}
+Mon Oct  2 18:47:08 2017 <c#6[close]: {"time":1461531891,"items":[{"num":1,"discount":10.93,"code":"1033980","priceMin":0,"exclude":"0","price":38,"amount":1,"cost":36,"barcode":"40084725"},{"exclude":"0","price":39.8,"barcode":"4620006000925","cost":37,"amount":1,"discount":11.44,"num":2,"priceMin":0,"code":"1229684"}],"coupons":["cl02759740479"],"id":"3925_3_638_136431","req":"close"}
+Mon Oct  2 18:47:08 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:47:08 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
+Mon Oct  2 18:47:08 2017 -client #6
+Mon Oct  2 18:47:13 2017 +client #6 127.0.0.1
+Mon Oct  2 18:47:13 2017 <c#6[verify]: {"id":"3925_3_638","code":"cl02759740479","req":"verify"}
+Mon Oct  2 18:47:13 2017 >c#6[coupon]: {"code":"cl02759740479","state":"invalid","ans":"coupon"}
+Mon Oct  2 18:47:13 2017 <c#6[prepare]: {"coupons":["cl02759740479"],"req":"prepare","id":"3925_3_638_136431","items":[{"cost":36.1,"amount":1,"barcode":"40084725","price":38,"exclude":"0","code":"1033980","priceMin":0,"num":1,"discount":1.9},{"exclude":"0","price":39.8,"barcode":"4620006000925","cost":37.81,"amount":1,"discount":1.99,"num":2,"priceMin":0,"code":"1229684"}],"time":1461531891}
+Mon Oct  2 18:47:13 2017 >c#6[discount]: {"ans":"discount","discount":[{"code":"action-6","discount":10.925,"num":1},{"discount":11.4425,"num":2,"code":"action-6"}],"id":"3925_3_638_136431"}
+Mon Oct  2 18:47:13 2017 <c#6[close]: {"time":1461531891,"items":[{"priceMin":0,"code":"1033980","discount":10.93,"num":1,"price":38,"exclude":"0","barcode":"40084725","amount":1,"cost":36},{"exclude":"0","price":39.8,"cost":37,"amount":1,"barcode":"4620006000925","num":2,"discount":11.44,"code":"1229684","priceMin":0}],"id":"3925_3_638_136431","coupons":["cl02759740479"],"req":"close"}
+Mon Oct  2 18:47:13 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:47:13 2017 >c#6[close]: {"id":"3925_3_638_136431","ans":"close"}
+Mon Oct  2 18:47:13 2017 -client #6
+Mon Oct  2 18:47:14 2017 +client #6 127.0.0.1
+Mon Oct  2 18:47:14 2017 <c#6[verify]: {"req":"verify","code":"cl02759740479","id":"3925_3_638"}
+Mon Oct  2 18:47:14 2017 >c#6[coupon]: {"code":"cl02759740479","state":"invalid","ans":"coupon"}
+Mon Oct  2 18:47:14 2017 <c#6[prepare]: {"req":"prepare","coupons":["cl02759740479"],"id":"3925_3_638_136431","items":[{"exclude":"0","price":38,"barcode":"40084725","amount":1,"cost":36.1,"discount":1.9,"num":1,"priceMin":0,"code":"1033980"},{"exclude":"0","price":39.8,"barcode":"4620006000925","amount":1,"cost":37.81,"discount":1.99,"num":2,"priceMin":0,"code":"1229684"}],"time":1461531891}
+Mon Oct  2 18:47:14 2017 >c#6[discount]: {"ans":"discount","id":"3925_3_638_136431","discount":[{"discount":10.925,"num":1,"code":"action-6"},{"code":"action-6","discount":11.4425,"num":2}]}
+Mon Oct  2 18:47:14 2017 <c#6[close]: {"time":1461531891,"items":[{"code":"1033980","priceMin":0,"num":1,"discount":10.93,"amount":1,"cost":36,"barcode":"40084725","price":38,"exclude":"0"},{"num":2,"discount":11.44,"code":"1229684","priceMin":0,"exclude":"0","price":39.8,"cost":37,"amount":1,"barcode":"4620006000925"}],"coupons":["cl02759740479"],"id":"3925_3_638_136431","req":"close"}
+Mon Oct  2 18:47:14 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:47:14 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
+Mon Oct  2 18:47:14 2017 -client #6
+Mon Oct  2 18:51:43 2017 +client #6 127.0.0.1
+Mon Oct  2 18:51:43 2017 <c#6[verify]: {"id":"3925_3_638","code":"cl02759740479","req":"verify"}
+Mon Oct  2 18:51:43 2017 >c#6[coupon]: {"state":"invalid","ans":"coupon","code":"cl02759740479"}
+Mon Oct  2 18:51:43 2017 <c#6[prepare]: {"time":1461531891,"req":"prepare","coupons":["cl02759740479"],"items":[{"cost":36.1,"discount":1.9,"amount":1,"exclude":"0","num":1,"price":38,"priceMin":0,"code":"1033980","barcode":"40084725"},{"price":39.8,"num":2,"amount":1,"exclude":"0","code":"1229684","priceMin":0,"barcode":"4620006000925","discount":1.99,"cost":37.81}],"id":"3925_3_638_136431"}
+Mon Oct  2 18:51:43 2017 >c#6[discount]: {"discount":[{"num":1,"discount":10.925,"code":"action-6"},{"num":2,"discount":11.4425,"code":"action-6"}],"ans":"discount","id":"3925_3_638_136431"}
+Mon Oct  2 18:51:43 2017 <c#6[close]: {"time":1461531891,"req":"close","id":"3925_3_638_136431","coupons":["cl02759740479"],"items":[{"priceMin":0,"code":"1033980","barcode":"40084725","amount":1,"exclude":"0","num":1,"price":38,"cost":36,"discount":10.93},{"amount":1,"exclude":"0","price":39.8,"num":2,"priceMin":0,"code":"1229684","barcode":"4620006000925","cost":37,"discount":11.44}]}
+Mon Oct  2 18:51:43 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:51:43 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
+Mon Oct  2 18:51:43 2017 -client #6
+Mon Oct  2 18:51:44 2017 +client #6 127.0.0.1
+Mon Oct  2 18:51:44 2017 <c#6[verify]: {"id":"3925_3_638","code":"cl02759740479","req":"verify"}
+Mon Oct  2 18:51:44 2017 >c#6[coupon]: {"state":"invalid","ans":"coupon","code":"cl02759740479"}
+Mon Oct  2 18:51:44 2017 <c#6[prepare]: {"coupons":["cl02759740479"],"items":[{"cost":36.1,"discount":1.9,"barcode":"40084725","priceMin":0,"code":"1033980","exclude":"0","amount":1,"price":38,"num":1},{"cost":37.81,"discount":1.99,"amount":1,"exclude":"0","num":2,"price":39.8,"barcode":"4620006000925","priceMin":0,"code":"1229684"}],"id":"3925_3_638_136431","time":1461531891,"req":"prepare"}
+Mon Oct  2 18:51:44 2017 >c#6[discount]: {"ans":"discount","discount":[{"code":"action-6","discount":10.925,"num":1},{"num":2,"discount":11.4425,"code":"action-6"}],"id":"3925_3_638_136431"}
+Mon Oct  2 18:51:44 2017 <c#6[close]: {"items":[{"discount":10.93,"cost":36,"price":38,"num":1,"exclude":"0","amount":1,"code":"1033980","priceMin":0,"barcode":"40084725"},{"price":39.8,"num":2,"amount":1,"exclude":"0","priceMin":0,"code":"1229684","barcode":"4620006000925","discount":11.44,"cost":37}],"coupons":["cl02759740479"],"id":"3925_3_638_136431","req":"close","time":1461531891}
+Mon Oct  2 18:51:44 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:51:44 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
+Mon Oct  2 18:51:44 2017 -client #6
+Mon Oct  2 18:51:44 2017 +client #6 127.0.0.1
+Mon Oct  2 18:51:44 2017 <c#6[verify]: {"code":"cl02759740479","id":"3925_3_638","req":"verify"}
+Mon Oct  2 18:51:44 2017 >c#6[coupon]: {"code":"cl02759740479","state":"invalid","ans":"coupon"}
+Mon Oct  2 18:51:44 2017 <c#6[prepare]: {"id":"3925_3_638_136431","coupons":["cl02759740479"],"items":[{"cost":36.1,"discount":1.9,"code":"1033980","priceMin":0,"barcode":"40084725","amount":1,"exclude":"0","price":38,"num":1},{"num":2,"price":39.8,"amount":1,"exclude":"0","priceMin":0,"barcode":"4620006000925","code":"1229684","discount":1.99,"cost":37.81}],"time":1461531891,"req":"prepare"}
+Mon Oct  2 18:51:44 2017 >c#6[discount]: {"discount":[{"code":"action-6","discount":10.925,"num":1},{"code":"action-6","num":2,"discount":11.4425}],"ans":"discount","id":"3925_3_638_136431"}
+Mon Oct  2 18:51:44 2017 <c#6[close]: {"time":1461531891,"req":"close","coupons":["cl02759740479"],"items":[{"exclude":"0","amount":1,"price":38,"num":1,"code":"1033980","priceMin":0,"barcode":"40084725","cost":36,"discount":10.93},{"cost":37,"discount":11.44,"amount":1,"exclude":"0","price":39.8,"num":2,"barcode":"4620006000925","priceMin":0,"code":"1229684"}],"id":"3925_3_638_136431"}
+Mon Oct  2 18:51:44 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:51:44 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
+Mon Oct  2 18:51:44 2017 -client #6
+Mon Oct  2 18:51:45 2017 +client #6 127.0.0.1
+Mon Oct  2 18:51:45 2017 <c#6[verify]: {"id":"3925_3_638","code":"cl02759740479","req":"verify"}
+Mon Oct  2 18:51:45 2017 >c#6[coupon]: {"state":"invalid","ans":"coupon","code":"cl02759740479"}
+Mon Oct  2 18:51:45 2017 <c#6[prepare]: {"req":"prepare","time":1461531891,"items":[{"cost":36.1,"discount":1.9,"amount":1,"exclude":"0","price":38,"num":1,"priceMin":0,"barcode":"40084725","code":"1033980"},{"discount":1.99,"cost":37.81,"price":39.8,"num":2,"amount":1,"exclude":"0","priceMin":0,"barcode":"4620006000925","code":"1229684"}],"coupons":["cl02759740479"],"id":"3925_3_638_136431"}
+Mon Oct  2 18:51:45 2017 >c#6[discount]: {"id":"3925_3_638_136431","ans":"discount","discount":[{"code":"action-6","discount":10.925,"num":1},{"code":"action-6","discount":11.4425,"num":2}]}
+Mon Oct  2 18:51:45 2017 <c#6[close]: {"req":"close","time":1461531891,"id":"3925_3_638_136431","items":[{"cost":36,"discount":10.93,"priceMin":0,"code":"1033980","barcode":"40084725","amount":1,"exclude":"0","price":38,"num":1},{"price":39.8,"num":2,"exclude":"0","amount":1,"code":"1229684","priceMin":0,"barcode":"4620006000925","discount":11.44,"cost":37}],"coupons":["cl02759740479"]}
+Mon Oct  2 18:51:45 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:51:45 2017 >c#6[close]: {"id":"3925_3_638_136431","ans":"close"}
+Mon Oct  2 18:51:45 2017 -client #6
