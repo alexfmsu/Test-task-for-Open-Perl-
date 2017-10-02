@@ -1,0 +1,9 @@
+Mon Oct  2 18:27:06 2017 +client #6 127.0.0.1
+Mon Oct  2 18:27:06 2017 <c#6[verify]: {"id":"3925_3_638","code":"cl02759740479","req":"verify"}
+Mon Oct  2 18:27:06 2017 >c#6[coupon]: {"ans":"coupon","state":"valid","code":"cl02759740479"}
+Mon Oct  2 18:27:06 2017 <c#6[prepare]: {"req":"prepare","items":[{"discount":1.9,"exclude":"0","barcode":"40084725","code":"1033980","price":38,"amount":1,"num":1,"cost":36.1,"priceMin":0},{"discount":1.99,"exclude":"0","barcode":"4620006000925","code":"1229684","price":39.8,"amount":1,"num":2,"cost":37.81,"priceMin":0}],"time":1461531891,"coupons":["cl02759740479"],"id":"3925_3_638_136431"}
+Mon Oct  2 18:27:06 2017 >c#6[discount]: {"id":"3925_3_638_136431","discount":[{"code":"action-6","num":1,"discount":10.925},{"num":2,"discount":11.4425,"code":"action-6"}],"ans":"discount"}
+Mon Oct  2 18:27:06 2017 <c#6[close]: {"id":"3925_3_638_136431","coupons":["cl02759740479"],"time":1461531891,"req":"close","items":[{"cost":36,"num":1,"priceMin":0,"price":38,"barcode":"40084725","code":"1033980","exclude":"0","discount":10.93,"amount":1},{"amount":1,"code":"1229684","barcode":"4620006000925","exclude":"0","discount":11.44,"price":39.8,"priceMin":0,"num":2,"cost":37}]}
+Mon Oct  2 18:27:06 2017 coupon 02-759-740-479 closed
+Mon Oct  2 18:27:06 2017 >c#6[close]: {"ans":"close","id":"3925_3_638_136431"}
+Mon Oct  2 18:27:06 2017 -client #6
